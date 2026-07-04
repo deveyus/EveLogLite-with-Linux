@@ -134,10 +134,6 @@ MainWindow::MainWindow(const QString &fileName, QWidget *parent) :
 
     ui->setupUi(this);
 
-#ifdef Q_OS_LINUX
-    menuBar()->setNativeMenuBar(false);
-#endif
-
     m_monospaceFont = settings.value("monospaceFont", 0).toBool();
     if (m_monospaceFont)
     {
